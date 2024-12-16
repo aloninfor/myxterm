@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuarios</title>
+</head>
+<body>
+    <h1>Registro de Usuarios</h1>
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+    <form method="post">
+        <label for="username">Nombre de Usuario:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Contraseña:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <label for="role">Rol:</label><br>
+        <select id="role" name="role">
+            <option value="user">Usuario</option>
+            <option value="admin">Administrador</option>
+        </select><br><br>
+        <button type="submit">Registrar</button>
+    </form>
+    <a href="/">Volver al Inicio</a>
+</body>
+</html>
