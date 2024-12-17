@@ -1,0 +1,16 @@
+ssh_rdp_manager/
+│
+├── backend/
+│   ├── app.py                  # Backend principal (Flask)
+│   ├── database.db             # Base de datos SQLite (se puede cambiar a PostgreSQL)
+│   ├── models.py               # Definición de tablas (usuarios, registros)
+│   ├── services.py             # Lógica de conexión SSH, RDP, VNC
+│   ├── auth.py                 # Autenticación y autorización
+│   └── requirements.txt        # Dependencias de Python
+│
+├── frontend/
+│   ├── index.html              # Interfaz de usuario básica (HTML/CSS/JS)
+│   └── app.js                  # Lógica de frontend con solicitudes al backend
+│
+├── docker-compose.yml          # Configuración de Docker Compose
+└── Dockerfile                  # Dockerfile del Backend
